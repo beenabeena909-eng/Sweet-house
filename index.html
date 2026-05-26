@@ -3,125 +3,442 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Praveen Sweet House</title>
+  <title>Praveen Sweet House – Fresh Mithai, Pure Desi Swad</title>
+  <meta name="description" content="Praveen Sweet House – handcrafted Indian sweets made with pure ghee, fresh milk and age-old recipes. Order online or visit our store.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="grain-overlay" aria-hidden="true"></div>
 
-  <header class="topbar">
-    <div class="brand">Praveen Sweet House</div>
-    <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">Menu</button>
-    <nav class="main-nav" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#special">Special</a>
-      <a href="#menu">Menu</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- ── NAV ─────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#home">
+        <span class="brand-icon" aria-hidden="true">🍬</span>
+        <span>Praveen Sweet House</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars" id="navIcon"></i>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#features">Why Us</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact" class="nav-cta">Visit Us</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <main>
-    <section class="hero reveal" id="home">
-      <div class="hero-content">
-        <p class="kicker">Taste of Tradition</p>
-        <h1>Fresh Mithai, Warm Dil, Pure Desi Swad</h1>
-        <p>
-          Welcome to Praveen Sweet House, where every bite is made with fresh ingredients,
-          authentic recipes, and lots of care.
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#menu">Explore Menu</a>
-          <a class="btn btn-secondary" href="#contact">Visit Shop</a>
+  <!-- ── HERO ─────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-particles" aria-hidden="true">
+      <span class="p p1">🍮</span>
+      <span class="p p2">🧁</span>
+      <span class="p p3">🍯</span>
+      <span class="p p4">✨</span>
+      <span class="p p5">🎁</span>
+      <span class="p p6">⭐</span>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fa-solid fa-award"></i> Trusted by 10,000+ Families Since 1990
+      </div>
+      <h1>Fresh Mithai,<br><em>Pure Desi Swad</em></h1>
+      <p>Handcrafted Indian sweets made with pure ghee, fresh milk, and age-old recipes. Every bite is a celebration.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">
+          <i class="fa-solid fa-utensils"></i> Explore Menu
+        </a>
+        <a href="https://wa.me/919000000000" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>50+</strong><span>Sweet Varieties</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>35 Yrs</strong><span>Of Experience</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>100%</strong><span>Fresh Daily</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hv-ring hv-ring-1"></div>
+      <div class="hv-ring hv-ring-2"></div>
+      <div class="hv-card hvc-1">
+        <img
+          src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=260&h=200&fit=crop&q=80"
+          alt="Assorted Mithai"
+          loading="lazy"
+          onerror="this.parentElement.innerHTML='<span style=font-size:3rem>🍮</span>'"
+        >
+      </div>
+      <div class="hv-card hvc-2">
+        <img
+          src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=200&h=160&fit=crop&q=80"
+          alt="Indian Sweets"
+          loading="lazy"
+          onerror="this.parentElement.innerHTML='<span style=font-size:2.4rem>🧁</span>'"
+        >
+      </div>
+      <div class="hv-label">Daily Fresh ✓</div>
+    </div>
+    <a class="scroll-hint" href="#features" aria-label="Scroll down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ── FEATURES ──────────────────────────── -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="feat-grid">
+        <div class="feat-card reveal">
+          <div class="feat-icon"><i class="fa-solid fa-seedling"></i></div>
+          <h3>100% Fresh</h3>
+          <p>Made fresh every morning. No preservatives, no artificial colors.</p>
+        </div>
+        <div class="feat-card reveal">
+          <div class="feat-icon"><i class="fa-solid fa-medal"></i></div>
+          <h3>Premium Quality</h3>
+          <p>Only A-grade ingredients — pure desi ghee, farm milk, and premium nuts.</p>
+        </div>
+        <div class="feat-card reveal">
+          <div class="feat-icon"><i class="fa-solid fa-truck-fast"></i></div>
+          <h3>Fast Delivery</h3>
+          <p>Same-day city delivery. Order before 2 PM for evening delivery.</p>
+        </div>
+        <div class="feat-card reveal">
+          <div class="feat-icon"><i class="fa-solid fa-gift"></i></div>
+          <h3>Gift Boxes</h3>
+          <p>Beautifully packed gift boxes for weddings, Diwali &amp; all occasions.</p>
         </div>
       </div>
-      <div class="hero-card" aria-hidden="true">
-        <div class="hero-sweet hero-sweet-1"></div>
-        <div class="hero-sweet hero-sweet-2"></div>
-        <div class="hero-sweet hero-sweet-3"></div>
-        <p>Daily Fresh</p>
+    </div>
+  </section>
+
+  <!-- ── CHEF SPECIALS ─────────────────────── -->
+  <section class="specials" id="specials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-hat-chef"></i> Chef's Pick</span>
+        <h2>House Specials</h2>
+        <p>Our most loved signature recipes — perfected over decades.</p>
       </div>
-    </section>
+      <div class="specials-grid">
 
-    <section class="about reveal" id="about">
-      <h2>Hamari Kahani</h2>
-      <p>
-        Praveen Sweet House has become a neighborhood favorite with handcrafted sweets,
-        crispy snacks, and festive gift boxes. From family celebrations to everyday cravings,
-        we make sure each order feels special.
-      </p>
-    </section>
+        <article class="sc reveal">
+          <div class="sc-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1606788075761-c0c0c3a34148?w=480&h=300&fit=crop&q=80"
+              alt="Kesar Peda"
+              loading="lazy"
+              onerror="this.parentElement.classList.add('img-fallback');this.remove()"
+            >
+            <span class="sc-badge">Bestseller</span>
+          </div>
+          <div class="sc-body">
+            <h3><i class="fa-solid fa-circle" style="color:#F39C12;font-size:.7em"></i> Kesar Peda</h3>
+            <p>Rich milk peda infused with saffron and cardamom. Melt-in-mouth texture.</p>
+            <div class="sc-footer">
+              <strong>Rs. 480 / kg</strong>
+              <a href="https://wa.me/919000000000" class="btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i> Order
+              </a>
+            </div>
+          </div>
+        </article>
 
-    <section class="special reveal" id="special">
-      <h2>Chef Special</h2>
-      <div class="special-grid">
-        <article>
-          <h3>Kesar Peda</h3>
-          <p>Rich milk peda with saffron aroma and soft texture.</p>
+        <article class="sc reveal">
+          <div class="sc-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1505253149613-112d21d9f6a9?w=480&h=300&fit=crop&q=80"
+              alt="Dry Fruit Laddu"
+              loading="lazy"
+              onerror="this.parentElement.classList.add('img-fallback');this.remove()"
+            >
+            <span class="sc-badge sc-green">Healthy</span>
+          </div>
+          <div class="sc-body">
+            <h3><i class="fa-solid fa-circle" style="color:#8B4513;font-size:.7em"></i> Dry Fruit Laddu</h3>
+            <p>Premium cashews, almonds, pistachios &amp; jaggery. No sugar, pure goodness.</p>
+            <div class="sc-footer">
+              <strong>Rs. 920 / kg</strong>
+              <a href="https://wa.me/919000000000" class="btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i> Order
+              </a>
+            </div>
+          </div>
         </article>
-        <article>
-          <h3>Dry Fruit Laddu</h3>
-          <p>Premium nuts, ghee, and jaggery in every healthy bite.</p>
+
+        <article class="sc reveal">
+          <div class="sc-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=480&h=300&fit=crop&q=80"
+              alt="Motichoor Laddu"
+              loading="lazy"
+              onerror="this.parentElement.classList.add('img-fallback');this.remove()"
+            >
+            <span class="sc-badge sc-purple">Festive</span>
+          </div>
+          <div class="sc-body">
+            <h3><i class="fa-solid fa-circle" style="color:#FF6B00;font-size:.7em"></i> Motichoor Laddu</h3>
+            <p>Tiny golden boondi spheres in sugar syrup. Made fresh every morning.</p>
+            <div class="sc-footer">
+              <strong>Rs. 360 / kg</strong>
+              <a href="https://wa.me/919000000000" class="btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i> Order
+              </a>
+            </div>
+          </div>
         </article>
-        <article>
-          <h3>Motichoor Laddu</h3>
-          <p>Traditional festive laddus made fresh every morning.</p>
-        </article>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="menu reveal" id="menu">
-      <div class="section-head">
-        <h2>Popular Menu</h2>
-        <p>Best-selling sweets loved by all age groups.</p>
+  <!-- ── MENU ──────────────────────────────── -->
+  <section class="menu-sec" id="menu">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-bowl-rice"></i> Full Menu</span>
+        <h2>Popular Sweets</h2>
+        <p>50+ varieties in-store. Our top sellers, loved by all.</p>
       </div>
       <div class="menu-grid">
-        <article class="menu-card">
+
+        <article class="mc reveal" style="--mc:#E74C3C">
+          <div class="mc-top">
+            <span class="mc-emoji">🍮</span>
+            <span class="mc-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </span>
+          </div>
           <h3>Gulab Jamun</h3>
-          <p>Soft khoya balls dipped in cardamom sugar syrup.</p>
-          <span>Rs. 320 / kg</span>
+          <p>Soft khoya balls dipped in cardamom rose sugar syrup.</p>
+          <div class="mc-footer">
+            <span class="mc-price">Rs. 320<small>/kg</small></span>
+            <a href="https://wa.me/919000000000" class="mc-order" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
         </article>
-        <article class="menu-card">
+
+        <article class="mc reveal" style="--mc:#3498DB">
+          <div class="mc-top">
+            <span class="mc-emoji">🥛</span>
+            <span class="mc-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+            </span>
+          </div>
           <h3>Rasgulla</h3>
-          <p>Light and juicy cottage cheese balls in sweet syrup.</p>
-          <span>Rs. 280 / kg</span>
+          <p>Light and juicy cottage cheese balls soaked in sugar syrup.</p>
+          <div class="mc-footer">
+            <span class="mc-price">Rs. 280<small>/kg</small></span>
+            <a href="https://wa.me/919000000000" class="mc-order" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
         </article>
-        <article class="menu-card">
+
+        <article class="mc reveal" style="--mc:#F39C12">
+          <div class="mc-top">
+            <span class="mc-emoji">💛</span>
+            <span class="mc-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </span>
+          </div>
           <h3>Kaju Katli</h3>
-          <p>Silky cashew fudge with premium texture and taste.</p>
-          <span>Rs. 900 / kg</span>
+          <p>Silky diamond-cut cashew fudge — the festive classic.</p>
+          <div class="mc-footer">
+            <span class="mc-price">Rs. 900<small>/kg</small></span>
+            <a href="https://wa.me/919000000000" class="mc-order" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
         </article>
-        <article class="menu-card">
+
+        <article class="mc reveal" style="--mc:#8E44AD">
+          <div class="mc-top">
+            <span class="mc-emoji">🌟</span>
+            <span class="mc-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+            </span>
+          </div>
           <h3>Soan Papdi</h3>
-          <p>Flaky sweet cubes with cardamom and ghee notes.</p>
-          <span>Rs. 260 / kg</span>
+          <p>Flaky layered sweet cubes with cardamom and ghee aroma.</p>
+          <div class="mc-footer">
+            <span class="mc-price">Rs. 260<small>/kg</small></span>
+            <a href="https://wa.me/919000000000" class="mc-order" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
         </article>
+
+        <article class="mc reveal" style="--mc:#27AE60">
+          <div class="mc-top">
+            <span class="mc-emoji">💚</span>
+            <span class="mc-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </span>
+          </div>
+          <h3>Pista Barfi</h3>
+          <p>Soft pistachio fudge with aromatic cardamom and silver vark.</p>
+          <div class="mc-footer">
+            <span class="mc-price">Rs. 760<small>/kg</small></span>
+            <a href="https://wa.me/919000000000" class="mc-order" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="mc reveal" style="--mc:#FF6B00">
+          <div class="mc-top">
+            <span class="mc-emoji">🟠</span>
+            <span class="mc-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+            </span>
+          </div>
+          <h3>Besan Laddu</h3>
+          <p>Roasted gram flour, ghee, and sugar — pure desi comfort sweet.</p>
+          <div class="mc-footer">
+            <span class="mc-price">Rs. 340<small>/kg</small></span>
+            <a href="https://wa.me/919000000000" class="mc-order" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </article>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="testimonial reveal">
-      <h2>Customer Love</h2>
-      <blockquote>
-        "Best quality sweets in town. Taste bilkul ghar jaisa and delivery always on time."
-      </blockquote>
-      <p>- Happy Customer</p>
-    </section>
-
-    <section class="contact reveal" id="contact">
-      <h2>Visit Praveen Sweet House</h2>
-      <div class="contact-grid">
-        <p><strong>Address:</strong> Main Market, Your City</p>
-        <p><strong>Phone:</strong> +91-90000-00000</p>
-        <p><strong>Open:</strong> 8:00 AM to 10:00 PM</p>
+  <!-- ── TESTIMONIALS ───────────────────────── -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-heart"></i> Reviews</span>
+        <h2>What Our Customers Say</h2>
       </div>
-      <a class="btn btn-primary" href="https://wa.me/919000000000" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
-    </section>
-  </main>
+      <div class="testi-grid">
 
-  <footer>
-    <p>© <span id="year"></span> Praveen Sweet House. All rights reserved.</p>
+        <div class="testi-card reveal">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>"Best quality sweets in town. Taste bilkul ghar jaisa. Delivery always on time!"</blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar">R</div>
+            <div><strong>Ramesh Kumar</strong><span>Regular Customer</span></div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>"Wedding ke liye 50 kg mithai order ki — packaging and quality dono ekdum top class!"</blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar">S</div>
+            <div><strong>Sunita Sharma</strong><span>Wedding Order</span></div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>"Kaju Katli aur Peda bahut zyada fresh milte hain yahan. My whole family loves it!"</blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar">A</div>
+            <div><strong>Anjali Singh</strong><span>Loyal Customer</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────── -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+
+        <div class="contact-info reveal">
+          <span class="section-tag"><i class="fa-solid fa-location-dot"></i> Find Us</span>
+          <h2>Visit Our Shop</h2>
+          <ul class="contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Main Market, Your City, State – 000000</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+91-90000-00000</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <span>Open Daily: 8:00 AM – 10:00 PM</span>
+            </li>
+            <li>
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp Orders Accepted 24×7</span>
+            </li>
+          </ul>
+          <div class="contact-actions">
+            <a href="https://wa.me/919000000000" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+            </a>
+            <a href="tel:+919000000000" class="btn btn-outline">
+              <i class="fa-solid fa-phone"></i> Call Us
+            </a>
+          </div>
+        </div>
+
+        <div class="map-card reveal">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <p>Praveen Sweet House</p>
+          <span>Main Market, Your City</span>
+          <a href="https://maps.google.com" class="map-link" target="_blank" rel="noopener noreferrer">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in Maps
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-icon" aria-hidden="true">🍬</span>
+          <span>Praveen Sweet House</span>
+        </div>
+        <p>Serving fresh mithai and happiness since 1990.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/919000000000" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Praveen Sweet House. All rights reserved. Made with <i class="fa-solid fa-heart" style="color:#FF6B00"></i></p>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
